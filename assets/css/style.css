@@ -254,11 +254,10 @@ main {
         display: flex;
         flex-direction: row;
     }
-
     #benefits > div {
         flex: 1;
     }
-
+ 
     #benefits-image {
         order: 0
     }

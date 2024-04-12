@@ -164,11 +164,26 @@ main {
 }
 
 #times {
-    background: url('../images/Bristol_Prince\'s_Wharf_-_Henbury_going_to_the_Create_Centre.jpeg') no-repeat top center / cover;
+    background: url('../images/dublin-city.webp') no-repeat center / cover;
     display: flex;
     flex-wrap: wrap;
-
 }
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /*this will not wrap screen of less than 400px wide each div will fill the space available*/
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+/* override heading color set in general settings*/
+#times h3 {
+    color: #fafafa;
+}
+
 
 /* Footer */
 
@@ -258,25 +273,21 @@ main {
 @media screen and (min-width: 1200px) {     
     /* Reasons section */
 
-    #benefits {
+    @media screen and (min-width: 1200px) {
+        
+        #benefits {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        align-items: center; 
-    }
-
-    #benefits > div {
-        flex: 1;
-    }
-
-    #benefits-image {
-        flex: 0 0 auto; 
-    }
-
-    #benefits-mental {
-        text-align: right; 
-    }
-
-    #benefits-physical {
-        text-align: left;
+        }
+        #benefits-physical {
+        order: 0;
+        }
+        #benefits-mental {
+        order: 2;
+        }
+        #benefits-image {
+        order: 1;
+        }
     }
 }

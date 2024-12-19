@@ -1,6 +1,6 @@
 # Love Running
 
-![Love Running](assets/images/readme.png)
+![Love Running](assets/images/hero-image.webp)
 
 A web application designed for running enthusiasts to track their progress, set goals, and stay motivated on their fitness journey. This project was created as part of **Code Institute's Full-Stack Developer Program** and is the first code-along project I've ever completed.
 
